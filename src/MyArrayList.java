@@ -1,7 +1,7 @@
-public class MyArrayList<T> implements MyList{
-    private Object[] array;
-    private int size = 0;
-    private int capacity = 5;
+public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement the interface MyList */
+    private Object[] array; /* Creating an object class array */
+    private int size = 0; /* Size of my array */
+    private int capacity = 5; /* Max. size of an array */
     public MyArrayList(){
         array = new Object[capacity];
     }
