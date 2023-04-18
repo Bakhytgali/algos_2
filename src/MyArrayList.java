@@ -1,22 +1,30 @@
-public class MyArrayList implements MyList{
-    private int[] arr;
+public class MyArrayList<T> implements MyList{
+    private Object[] array;
     private int size = 0;
     private int capacity = 5;
+    public MyArrayList(){
+        array = new Object[capacity];
+    }
     @Override
     public int size(){
         return size;
+    }
+    @Override
+    public T get(int index){
+        return (T) array[index];
     }
     public void add(int el){
         if(size == capacity){
             increaseLength();
         }
-        arr[size++] = el;
+        array[size++] = el;
     }
     public void increaseLength(){
-        capacity *= 2;
-        int[] arr2 = new int[capacity];
+        capacity = (int) capacity * 2;
+        Object[] array2 = new Object[capacity];
         for(int i = 0; i < size; i++) {
-            arr2[i] = arr[i];
+            array2[i] = array[i];
         }
+        array = array2;
     }
 }
