@@ -69,5 +69,12 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
         array[index] = el;
         size++;
     }
-    public void sort(){}
+    public void sort(){
+        int temp;
+        for(int i = 0; i < size; i++){
+            if(array[i] > array[i+1]){
+                
+            }
+        }   
+    }
 }
