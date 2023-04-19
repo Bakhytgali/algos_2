@@ -49,4 +49,11 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
         }
         return lastIndex;
     }
+    @Override
+    public void clear(){
+        for(int i = 0; i < size; i++){
+            array[i] = null;
+        }
+        size = 0;
+    }
 }
