@@ -77,4 +77,13 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
             }
         }   
     }
+    @Override
+    public void sort(){
+        Object temp;
+        for(int i = 0; i < size; i++){
+            temp = array[i];
+            array[i] = array[i+1];
+            array[i+1] = temp;
+        }
+    }
 }
