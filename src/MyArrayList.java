@@ -39,4 +39,14 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
         }
         return doesContain;
     }
+    @Override
+    public int lastIndexOf(Object el){
+        int lastIndex = 0;
+        for(int i = 0; i < size; i++){
+            if(el == array[i]){
+                lastIndex = i;
+            }
+        }
+        return lastIndex;
+    }
 }
