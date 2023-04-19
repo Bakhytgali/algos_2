@@ -69,4 +69,5 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
         array[index] = el;
         size++;
     }
+    public void sort(){}
 }
