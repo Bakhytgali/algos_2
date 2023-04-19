@@ -13,7 +13,8 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
     public T get(int index){
         return (T) array[index];
     }
-    public void add(int el){
+   @Override
+    public void add(Object el){
         if(size == capacity){
             increaseLength();
         }
