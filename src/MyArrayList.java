@@ -27,4 +27,15 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
         }
         array = array2;
     }
+    @Override
+    public boolean contains(Object el){
+        boolean doesContain = true;
+        for(int i = 0; i < size; i++){
+            if(array[i] == el){
+                doesContain = false;
+                break;
+            }
+        }
+        return doesContain;
+    }
 }
