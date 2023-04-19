@@ -56,4 +56,17 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
         }
         size = 0;
     }
+     public void add(Object el, int index){
+        if(index > size || index < 0){
+            throw new IndexOutOfBoundsException();
+        }
+        if(index == size){
+            increaseLength();
+        }
+        for(int i = size; i > index; i--){
+            array[i] = array[i-1];
+        }
+        array[index] = el;
+        size++;
+    }
 }
