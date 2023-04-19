@@ -1,2 +1,2 @@
-public class MyLinkedList {
+public class MyLinkedList<T> implements MyList {
 }
