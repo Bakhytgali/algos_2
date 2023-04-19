@@ -87,12 +87,11 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
         }
     }
     @Override
-    public boolean remove(Object el){
-        boolean isRemovable = false;
-        for(int i = 0; i < size; i++){
-            if(el == array[i]){
-                isRemovable = true;
-            }
-        }
+    public boolean remove(Object el) {
+        for(int i=0; i<size; i++){
+            if(array[i] != null && array[i].equals(el)){
+                remove(i);
+                return true;        }
+        }    return false;
     }
 }
