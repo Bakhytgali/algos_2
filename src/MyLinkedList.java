@@ -30,4 +30,10 @@ public class MyLinkedList<T> implements MyList {
     public int size(){
       return size;  
     }
+   @Override
+    public void clear(){
+        head = null;
+        tail = null;
+        size = 0;
+    }
 }
