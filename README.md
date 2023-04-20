@@ -116,6 +116,24 @@ public boolean remove(Object el) {
         }    return false;
     }
 ```
-
+### 8
+**`Object remove(int index)` function**
+<br><br>
+**Definition:** *Removes the element at the specified position in this list.*
+<br><br>
+**Solving:**
+```java
+public Object remove(int index) {
+        if(index < 0 || index>=size){
+            throw new IndexOutOfBoundsException();
+        }
+        T removed = (T) array[index];
+        for(int i=index; i<size-1; i++){
+            array[i]=array[i+1];
+        }
+        size--;
+        return removed;
+    }
+```
 
 
