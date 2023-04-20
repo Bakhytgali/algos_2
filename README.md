@@ -83,6 +83,23 @@ public int indexOf(Object el){
         return i;
     }
 ```
+### 6
+**`int lastIndexOf(Object el)` function**
+<br><br>
+**Definition:** *Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.*
+<br><br>
+**Solving:**
+```java
+public int lastIndexOf(Object el){
+        int lastIndex = 0;
+        for(int i = 0; i < size; i++){
+            if(el == array[i]){
+                lastIndex = i;
+            }
+        }
+        return lastIndex;
+    }
+```
 
 
 
