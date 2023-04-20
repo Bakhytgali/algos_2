@@ -55,4 +55,15 @@ public boolean contains(Object el){
         return doesContain;
     }
 ```
+### 4
+**`T get(int index)` function**
+<br><br>
+**Definition:** *Returns the element at the specified position in this list.*
+<br><br>
+**Solving:**
+```java
+public T get(int index){
+        return (T) array[index];
+    }
+```
 
