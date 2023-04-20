@@ -146,5 +146,24 @@ public Object remove(int index) {
         return size;
     }
 ```
+### 10
+**`void sort()` function**
+<br><br>
+**Definition:** *Sorts this list according to the order induced by the specified Comparator.*
+<br><br>
+**Solving:**
+```java
+ public void sort(){
+        for(int i = 0; i < size - 1; i++){
+            for(int j = i + 1; j < size; j++) {
+                if (((Comparable)array[i]).compareTo(array[j]) > 0) {
+                    Object temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+    }
+```
 
 
