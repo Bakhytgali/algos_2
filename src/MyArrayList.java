@@ -79,11 +79,14 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
     }
     @Override
     public void sort(){
-        Object temp;
-        for(int i = 0; i < size; i++){
-            temp = array[i];
-            array[i] = array[i+1];
-            array[i+1] = temp;
+        for(int i = 0; i < size - 1; i++){
+            for(int j = i + 1; j < size; j++) {
+                if (array[i] > array[j]) {
+                    Object temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
         }
     }
     @Override
