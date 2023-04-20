@@ -12,7 +12,13 @@ public class MyLinkedList<T> implements MyList {
 
     }
   @Override
-    public void add(Object el, int index){
-        
+    public void add(Object el){
+        MyNode newNode = new MyNode(new el);
+        if(head == null){
+            head = tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
     }
 }
