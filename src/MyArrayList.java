@@ -94,4 +94,16 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
                 return true;        }
         }    return false;
     }
+    @Override
+    public Object remove(int index) {
+        if(index < 0 || index>=size){
+            throw new IndexOutOfBoundsException();
+        }
+        T removed = (T) array[index];
+        for(int i=index; i<size-1; i++){
+            array[i]=array[i+1];
+        }
+        size--;
+        return removed;
+    }
 }
