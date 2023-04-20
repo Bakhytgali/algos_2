@@ -135,5 +135,16 @@ public Object remove(int index) {
         return removed;
     }
 ```
+### 9
+**`int size()` function**
+<br><br>
+**Definition:** *Returns the number of elements in this list.*
+<br><br>
+**Solving:**
+```java
+ public int size(){
+        return size;
+    }
+```
 
 
