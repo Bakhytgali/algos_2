@@ -100,6 +100,22 @@ public int lastIndexOf(Object el){
         return lastIndex;
     }
 ```
+### 7
+**`boolean remove(Object el)` function**
+<br><br>
+**Definition:** *Removes the first occurrence of the specified element from this list, if it is present.*
+<br><br>
+**Solving:**
+```java
+public boolean remove(Object el) {
+        for(int i=0; i<size; i++){
+            if(array[i] != null && array[i].equals(el)){
+                remove(i);
+                return true;
+            }
+        }    return false;
+    }
+```
 
 
 
