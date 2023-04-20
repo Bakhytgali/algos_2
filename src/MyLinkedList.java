@@ -1,8 +1,8 @@
 public class MyLinkedList<T> implements MyList {
-  class MyNode<T>{
-        int data;
+   class MyNode<T>{
+        T data;
         MyNode next;
-        MyNode(int data){
+        MyNode(T data){
             this.data = data;
             next = null;
         }
