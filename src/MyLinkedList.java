@@ -17,7 +17,7 @@ public class MyLinkedList<T> implements MyList {
     }
   @Override
     public void add(T el){
-        MyNode<T> newNode = new MyNode<>(el);
+        MyNode<T> newNode = (MyNode<T>) new MyNode<>(el);
         if(head == null){
             head = tail = newNode;
         } else {
