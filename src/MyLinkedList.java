@@ -26,4 +26,8 @@ public class MyLinkedList<T> implements MyList {
         }
         size++;
     }
+   @Override
+    public int size(){
+      return size;  
+    }
 }
