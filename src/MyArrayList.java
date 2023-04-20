@@ -81,7 +81,7 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
     public void sort(){
         for(int i = 0; i < size - 1; i++){
             for(int j = i + 1; j < size; j++) {
-                if (array[i] > array[j]) {
+                if (((Comparable)array[i]).compareTo(array[j]) > 0) {
                     Object temp = array[i];
                     array[i] = array[j];
                     array[j] = temp;
