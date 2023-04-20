@@ -66,4 +66,23 @@ public T get(int index){
         return (T) array[index];
     }
 ```
+### 5
+**`int indexOf(Object el)` function**
+<br><br>
+**Definition:** *Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.*
+<br><br>
+**Solving:**
+```java
+public int indexOf(Object el){
+        int i;
+        for(i = 0; i < size; i++){
+            if(array[i] == el) {
+                break;
+            }
+        }
+        return i;
+    }
+```
+
+
 
