@@ -1,11 +1,18 @@
 public class MyLinkedList<T> implements MyList {
-   class MyNode<T>{
-        T data;
-        MyNode next;
-        MyNode(T data){
+  class MyNode<T>{
+        private MyNode<T> next;
+        private T data;
+        private MyNode(T data){
             this.data = data;
-            next = null;
         }
+    }
+    private int size;
+    private MyNode<T> head;
+    private MyNode<T> tail;
+    MyLinkedList(){
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
     }
   @Override
     public T get(int index){
