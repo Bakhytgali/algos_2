@@ -35,7 +35,7 @@ public class MyLinkedList<T> implements MyList {
     }
    @Override
     public int size(){
-      return size;  
+        return this.size; 
     }
    @Override
     public void clear(){
