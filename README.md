@@ -37,4 +37,22 @@ public void clear(){
         size = 0;
     }
 ```
+### 3
+**`boolean contains(Object el)` function**
+<br><br>
+**Definition:** *Returns true if this list contains the specified element.*
+<br><br>
+**Solving:**
+```java
+public boolean contains(Object el){
+        boolean doesContain = true;
+        for(int i = 0; i < size; i++){
+            if(array[i] == el){
+                doesContain = false;
+                break;
+            }
+        }
+        return doesContain;
+    }
+```
 
