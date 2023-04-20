@@ -8,8 +8,12 @@ public class MyLinkedList<T> implements MyList {
         }
     }
   @Override
-    public void get(){
-
+    public T get(int index){
+        MyNode<T> current = head;
+        for(int i = 0; i < index; i++){
+            current = current.next;
+        }
+        return current.data;
     }
   @Override
     public void add(T el){
