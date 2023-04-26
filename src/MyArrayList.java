@@ -5,6 +5,16 @@ public class MyArrayList<T> implements MyList{ /* Class MyArrayList implement th
     public MyArrayList(){
         array = new Object[capacity];
     }
+    public void addAll(Object el, int index){
+        Object temp = array[index];
+        array[index] = el;
+        size += 1;
+        for(int i = index + 1; i < size; i++){
+            Object temp2 = array[i];
+            array[i] = temp;
+            temp = temp2;
+        }
+    }
     @Override
     public int size(){
         return size;
